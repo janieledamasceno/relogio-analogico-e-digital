@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e86f9e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: #050505;
+    margin-bottom: 20px;
+}
+
+.relogio{
+    width: 300px;
+    height: 300px;
+    border: 6px solid #7a1e48;
+    border-radius: 50%;
+    background-color: #571b3c;
+}
+
+.riscos{
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+/* Traços que representam os números do relógio */
+.risk{
+    width: 145px;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.risk .ponto{
+    width: 15px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.pointer{
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+}
+
+.p{
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 40%;
+    position: absolute;
+}
+
+/* Ponteiro dos segundos */
+.p_s{
+    width: 100px;
+    height: 3px;
+    background-color: #f00;
+}
+/* Ponteiro dos minutos */
+.p_m{
+    width: 120px;
+    height: 7px;
+    background-color: #fff;
+}
+/* Ponteiro das horas */
+.p_h{
+    width: 70px;
+    height: 10px;
+    background-color: #fff;
+}
+/* Ponto de enxaixe dos ponteiros*/
+.encaixe{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+/*Relógio digital*/
+.digital{
+    color: #7a1e48;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #050505;
+    font-size: 20px;
+}
